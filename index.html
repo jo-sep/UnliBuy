@@ -20,8 +20,9 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <!-- <link href="../assets/demo/demo.css" rel="stylesheet" /> -->
   </head>
-  <body class="sidebar-collapse">
 
+
+<body class="sidebar-collapse">
 
 <!-- NAVIGATION -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top sticky-top">
@@ -40,10 +41,10 @@
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Log-in</a>
+          <a class="nav-link" data-toggle="modal" data-target="#modallogin" href="#">Log-in</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal1" href="#">Register</a>
+          <a class="nav-link" data-toggle="modal" data-target="#modalregister" href="#">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
@@ -66,7 +67,7 @@
 
  <!-- NAVBAR WITH DROPDOWN -->  
 <div class="container sticky-top">
-<div class="navbar navbar-expand-lg bg-white sticky-top">
+<div class="navbar navbar-expand-lg bg-white">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -289,11 +290,10 @@
                 </ul>
               </div>
             </div>
-        </li>
+           </li>
+        </div>
       </ul>
-    </div>
   </div>
-</div>
 </div>
  <!-- NAVBAR WITH DROPDOWN --> 
 
@@ -425,8 +425,8 @@
         <h4 class="card-title">House and Lot for sale in Antipolo...</h4>
         <p class="card-text">PHP 4,590,280</p>
         <p class="card-text">2 Bedroom 60sqm with Parking Lot ..</p>
-        <a href="#" class="btn btn-primary">Buy Now !!!</a>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modalbuynow">Buy Now !!!</a>
+        <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modaladdtocart">Add to Cart</a>
       </div>
     </div>
 
@@ -436,8 +436,8 @@
         <h4 class="card-title">House and Lot for sale in Antipolo...</h4>
         <p class="card-text">PHP 4,590,280</p>
         <p class="card-text">2 Bedroom 60sqm with Parking Lot ..</p>
-        <a href="#" class="btn btn-primary">Buy Now !!!</a>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modalbuynow">Buy Now !!!</a>
+        <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modaladdtocart">Add to Cart</a>
       </div>
     </div>
 
@@ -448,8 +448,8 @@
             <h4 class="card-title">House and Lot for sale in Antipolo...</h4>
             <p class="card-text">PHP 4,590,280</p>
             <p class="card-text">2 Bedroom 60sqm with Parking Lot ..</p>
-            <a href="#" class="btn btn-primary">Buy Now !!!</a>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modalbuynow">Buy Now !!!</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modaladdtocart">Add to Cart</a>
       </div>
     </div>
 
@@ -460,8 +460,8 @@
             <h4 class="card-title">House and Lot for sale in Antipolo...</h4>
             <p class="card-text">PHP 4,590,280</p>
             <p class="card-text">2 Bedroom 60sqm with Parking Lot ..</p>
-            <a href="#" class="btn btn-primary">Buy Now !!!</a>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modalbuynow">Buy Now !!!</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modaladdtocart">Add to Cart</a>
       </div>
     </div>
 
@@ -472,8 +472,8 @@
             <h4 class="card-title">House and Lot for sale in Antipolo...</h4>
             <p class="card-text">PHP 4,590,280</p>
             <p class="card-text">2 Bedroom 60sqm with Parking Lot ..</p>
-            <a href="#" class="btn btn-primary">Buy Now !!!</a>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modalbuynow">Buy Now !!!</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modaladdtocart">Add to Cart</a>
       </div>
     </div>
 
@@ -484,8 +484,8 @@
             <h4 class="card-title">House and Lot for sale in Antipolo...</h4>
             <p class="card-text">PHP 4,590,280</p>
             <p class="card-text">2 Bedroom 60sqm with Parking Lot ..</p>
-            <a href="#" class="btn btn-primary btn-m">Buy Now !!!</a>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modalbuynow">Buy Now !!!</a>
+            <a href="#" class="btn btn-primary btn-m" data-toggle="modal" data-target="#modaladdtocart">Add to Cart</a>
       </div>
     </div>
 
@@ -496,7 +496,6 @@
   </p>
     </div>
 </div>
-
 <!-- SALE SECTION -->
 
   
@@ -651,7 +650,7 @@
 
 
 <!-- Modal Login -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modallogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -684,9 +683,8 @@
 </div>
 <!-- Modal Login -->
 
-
 <!-- Modal Register -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalregister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -721,6 +719,59 @@
   </div>
 </div>
 <!-- Modal Register -->
+
+
+
+<div class="modal fade" id="modalbuynow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">UnliBuy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          <h1 class="display-4"></h1>
+            <p class="lead">Successfully Purchased</p>
+            <hr class="my-4">
+        </div>
+      <div class="modal-footer">
+       <div class="modal-footer d-flex justify-content-center mx-auto">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel Order</button><p></p>
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">View Cart</button><p></p>
+          <button type="button" class="btn btn-warning btn-sm" data-dismiss="modal">Shop more!</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="modaladdtocart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">UnliBuy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          <h1 class="display-4"></h1>
+            <p class="lead">Successfully Added to Cart</p>
+            <hr class="my-4">
+        </div>
+      <div class="modal-footer">
+       <div class="modal-footer d-flex justify-content-center mx-auto">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel Order</button><p></p>
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">View Cart</button><p></p>
+          <button type="button" class="btn btn-warning btn-sm" data-dismiss="modal">Shop more!</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
 
 
